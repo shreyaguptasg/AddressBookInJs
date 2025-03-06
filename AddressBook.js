@@ -176,3 +176,8 @@ function editContactByName(name, newContact) {
       addressBook.splice(index, 1);
     }
   }
+
+  //UC6
+  function countContacts() {
+    return addressBook.reduce((count) => count + 1, 0);
+  }
