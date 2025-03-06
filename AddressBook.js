@@ -228,3 +228,8 @@ function editContactByName(name, newContact) {
         a.lastName.localeCompare(b.lastName)
     );
   }
+
+  //UC12
+  function sortBy(attribute) {
+    return addressBook.sort((a, b) => a[attribute].localeCompare(b[attribute]));
+  }
