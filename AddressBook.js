@@ -219,3 +219,12 @@ function editContactByName(name, newContact) {
       (contact) => contact.city === cityOrState || contact.state === cityOrState
     ).length;
   }
+
+  //UC11
+  function sortByName() {
+    return addressBook.sort(
+      (a, b) =>
+        a.firstName.localeCompare(b.firstName) ||
+        a.lastName.localeCompare(b.lastName)
+    );
+  }
