@@ -205,3 +205,10 @@ function editContactByName(name, newContact) {
       (contact) => contact.city === cityOrState || contact.state === cityOrState
     );
   }
+
+  //UC9
+  function viewByCityOrState(cityOrState) {
+    return addressBook.filter(
+      (contact) => contact.city === cityOrState || contact.state === cityOrState
+    );
+  }
