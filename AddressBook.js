@@ -198,3 +198,10 @@ function editContactByName(name, newContact) {
       console.error("Duplicate Contact");
     }
   }
+
+  //UC8
+  function searchByCityOrState(cityOrState) {
+    return addressBook.filter(
+      (contact) => contact.city === cityOrState || contact.state === cityOrState
+    );
+  }
