@@ -212,3 +212,10 @@ function editContactByName(name, newContact) {
       (contact) => contact.city === cityOrState || contact.state === cityOrState
     );
   }
+
+  //UC10
+  function countByCityOrState(cityOrState) {
+    return addressBook.filter(
+      (contact) => contact.city === cityOrState || contact.state === cityOrState
+    ).length;
+  }
